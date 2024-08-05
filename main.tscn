@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://rx2prvuegow1"]
+
+[ext_resource type="PackedScene" uid="uid://cdx1dv0234che" path="res://flappy.tscn" id="1_7ho08"]
+[ext_resource type="Script" path="res://rails.gd" id="2_oe6py"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Rails" type="Node2D" parent="."]
+script = ExtResource("2_oe6py")
+
+[node name="flappy" parent="." instance=ExtResource("1_7ho08")]
+position = Vector2(0, -8)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, -142)
