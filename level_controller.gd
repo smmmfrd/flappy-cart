@@ -34,5 +34,6 @@ func spawn_rail():
 	add_child(instance)
 
 func _process(delta):
+	var global_movement = -75 * delta
 	for rail in rails:
-		rail.global_position.x -= 75 * delta
+		rail.global_position.x += global_movement
