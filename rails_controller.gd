@@ -20,13 +20,12 @@ func initial_rails():
 func new_rail():
 	rails.pop_front()
 	deleted_rails += 1
-	print(deleted_rails)
 	spawn_rail()
 
 func spawn_rail():
 	var instance = rails_prefab.instantiate()
 	
-	if rails.back() != null:
+	if len(rails) != 0:
 		instance.global_position = rails.back().global_position + Vector2(32 * 16, 0)
 	else:
 		instance.global_position = Vector2(-32 * 16, 0)
