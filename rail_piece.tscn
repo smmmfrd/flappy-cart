@@ -1,16 +1,16 @@
 [gd_scene load_steps=5 format=3 uid="uid://cseckw7pojkye"]
 
-[ext_resource type="Texture2D" uid="uid://s04bosljx7i7" path="res://sprites/Dungeon Tiles/tracks.png" id="1_qamuw"]
+[ext_resource type="Texture2D" uid="uid://s04bosljx7i7" path="res://sprites/tracks.png" id="1_c8ixc"]
 [ext_resource type="Script" path="res://rail.gd" id="2_lq6um"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_subf7"]
-texture = ExtResource("1_qamuw")
+texture = ExtResource("1_c8ixc")
 0:0/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_4jw5p"]
 sources/0 = SubResource("TileSetAtlasSource_subf7")
 
-[node name="TileMap" type="TileMap"]
+[node name="RailPiece" type="TileMap"]
 tile_set = SubResource("TileSet_4jw5p")
 format = 2
 layer_0/tile_data = PackedInt32Array(-65536, 0, 0, -65535, 0, 0, -65534, 0, 0, -65533, 0, 0, -65532, 0, 0, -65531, 0, 0, -65530, 0, 0, -65529, 0, 0, -65528, 0, 0, -65527, 0, 0, -65526, 0, 0, -65525, 0, 0, -65524, 0, 0, -65523, 0, 0, -65522, 0, 0, -65521, 0, 0, -65520, 0, 0, -65519, 0, 0, -65518, 0, 0, -65517, 0, 0, -65516, 0, 0, -65515, 0, 0, -65514, 0, 0, -65513, 0, 0, -65512, 0, 0, -65511, 0, 0, -65510, 0, 0, -65509, 0, 0, -65508, 0, 0, -65507, 0, 0, -65506, 0, 0, -65505, 0, 0)
