@@ -19,3 +19,6 @@ func _physics_process(delta):
 		velocity.y = JUMP_VELOCITY
 	
 	move_and_slide()
+
+func player_collided(area : Area2D):
+	print(area.name)
