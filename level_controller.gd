@@ -25,11 +25,11 @@ func new_rail():
 	spawn_rail()
 
 func spawn_rail():
-	var instance = RAILS_PREFAB.instantiate()
+	var instance : Node = RAILS_PREFAB.instantiate()
 	
 	if len(rails) != 0:
 		if deleted_rails > 0 and deleted_rails % 4 == 0:
-			spawn_wall()
+			spawn_wall(instance)
 		
 		instance.global_position = rails.back().global_position + Vector2(32 * 16, 0)
 	else:
@@ -38,10 +38,10 @@ func spawn_rail():
 	rails.append(instance)
 	add_child(instance)
 
-func spawn_wall():
+func spawn_wall(parent : Node):
 	var instance = WALL_PREFAB.instantiate()
 	
-	add_child(instance)
+	parent.add_child(instance)
 
 func _process(delta):
 	var global_movement = -level_speed * delta
