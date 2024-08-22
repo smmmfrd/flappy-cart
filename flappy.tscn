@@ -14,7 +14,7 @@ size = Vector2(16, 15)
 script = ExtResource("1_3xc1h")
 
 [node name="Cart Hit Box" type="CollisionShape2D" parent="."]
-position = Vector2(0, 3.25)
+position = Vector2(0, -5)
 shape = SubResource("RectangleShape2D_3guyl")
 
 [node name="Area2D" type="Area2D" parent="."]

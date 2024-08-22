@@ -6,8 +6,12 @@
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_subf7"]
 texture = ExtResource("1_c8ixc")
 0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
 [sub_resource type="TileSet" id="TileSet_4jw5p"]
+physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_subf7")
 
 [node name="RailPiece" type="TileMap"]
