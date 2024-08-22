@@ -37,15 +37,15 @@ sources/7 = SubResource("TileSetAtlasSource_50g2s")
 tile_proxies/coords_level = [[0, Vector2i(0, 0)], [4, Vector2i(0, 0)], [1, Vector2i(0, 0)], [4, Vector2i(1, 0)], [2, Vector2i(0, 0)], [4, Vector2i(2, 0)], [3, Vector2i(0, 0)], [4, Vector2i(3, 0)], [4, Vector2i(0, 0)], [7, Vector2i(0, 0)], [4, Vector2i(1, 0)], [7, Vector2i(1, 0)], [4, Vector2i(2, 0)], [7, Vector2i(2, 0)], [4, Vector2i(3, 0)], [7, Vector2i(3, 0)], [5, Vector2i(0, 0)], [7, Vector2i(4, 0)], [6, Vector2i(0, 0)], [7, Vector2i(5, 0)]]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5jd7k"]
-size = Vector2(28, 271)
+size = Vector2(28, 96)
 
 [node name="Wall" type="TileMap"]
 tile_set = SubResource("TileSet_boko6")
 format = 2
-layer_0/tile_data = PackedInt32Array(-65536, 65543, 0, -1, 7, 0, -65537, 7, 0, -131073, 7, 0, -196609, 7, 0, -262145, 7, 0, -327681, 7, 0, -393217, 7, 0, -458753, 7, 0, -524289, 7, 0, -589825, 7, 0, -131072, 65543, 0, -196608, 65543, 0, -262144, 65543, 0, -327680, 65543, 0, -393216, 65543, 0, -458752, 65543, 0, -524288, 65543, 0, -589824, 65543, 0, -655360, 65543, 0, -655361, 7, 0, -720897, 7, 0, -786433, 7, 0, -851969, 7, 0, -917505, 7, 0, -983041, 7, 0, -1048576, 65543, 0, -983040, 65543, 0, -917504, 65543, 0, -851968, 65543, 0, -786432, 65543, 0, -720896, 65543, 0, -1048577, 262151, 0, -1114112, 327687, 0, -1114113, 131079, 0, -1179648, 196615, 0)
+layer_0/tile_data = PackedInt32Array(-65536, 65543, 0, -1, 7, 0, -65537, 7, 0, -131073, 7, 0, -196609, 7, 0, -262145, 7, 0, -327681, 262151, 0, -393217, 131079, 0, -131072, 65543, 0, -196608, 65543, 0, -262144, 65543, 0, -327680, 65543, 0, -393216, 327687, 0, -458752, 196615, 0)
 
 [node name="Wall Hitbox" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wall Hitbox"]
-position = Vector2(0, -135.5)
+position = Vector2(0, -48)
 shape = SubResource("RectangleShape2D_5jd7k")

@@ -4,7 +4,7 @@ extends Node2D
 
 const RAILS_PREFAB = preload("res://rail_piece.tscn")
 const WALL_PREFAB = preload("res://wall.tscn")
-var deleted_rails : int = 0
+var deleted_rails : int = 1
 
 var rails : Array[TileMap]
 
@@ -28,7 +28,7 @@ func spawn_rail():
 	var instance : Node = RAILS_PREFAB.instantiate()
 	
 	if len(rails) != 0:
-		if deleted_rails > 0 and deleted_rails % 4 == 0:
+		if deleted_rails > 0 and deleted_rails % 2 == 0:
 			spawn_wall(instance)
 		
 		instance.global_position = rails.back().global_position + Vector2(32 * 16, 0)
