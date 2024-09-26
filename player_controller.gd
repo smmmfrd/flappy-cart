@@ -13,4 +13,4 @@ func _physics_process(delta):
 	move_and_slide()
 
 func player_collided(area : Area2D):
-	print(area.name)
+	print("Player collided with " + area.name)
